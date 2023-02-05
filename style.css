@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; 
+    /* font-family: 'Sacramento', cursive; */
+    color:white;
+}
+.top {
+    background-size:cover;
+    scroll-behavior: smooth;
+    background-image: url("./images/bg.jpg");
+    height: 100vh;
+}
+#loader{
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	background: #ffffff url('/images/loader.gif') no-repeat center;
+	z-index: 999;
+}
+
+body {
+    overflow-x: hidden;
+    background: #fff;
+    min-height: 100vh;
+}   
+.logopart {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+
+}   
+.logoname {
+    font-family: 'Sacramento', cursive;
+    font-size: 60px;
+}
+    
+
+img {
+    width:50px;
+    height:50px;
+}
+
+
+
+header {
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: 0.5s alternate fadein;
+    width: 100%;
+    padding: 30px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+header a {
+    text-decoration: none;
+}
+header ul {
+    display :flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li {
+    list-style: none;
+    margin-left: 20px;
+    
+}
+
+header ul li a {
+    text-decoration: none;
+    padding: 6px 13px;
+    color: white;
+}
+
+header ul li a:hover,
+header ul li a.active {
+    
+    color: #b71d1d;
+}
+
+h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 120px;
+    font-size: 60px;
+    color: white;
+    animation: 1s alternate fadein;
+}
+
+.bottom {
+    
+    display:flex;
+    justify-content: space-between;
+    background-color: #121d31;
+    height: 100vh;
+}
+
+.quote {
+    font-size: 50px;
+    margin: 40px;
+}
+.blah {
+    width: 600px;
+    height: 600px;
+    
+}
+
+footer {
+    background-color: #0656ea;
+}
+  
+@keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+        opacity: 1;
+    }
+  }
+  
