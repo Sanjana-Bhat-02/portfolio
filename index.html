@@ -6,61 +6,79 @@
   <title> My Portfolio </title>
   <link rel="stylesheet" href="./style.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <script src="script.js"></script>
+  <script defer src="script.js"></script>
   
 
 </head>
 <body>
-    <div id="loader"></div>
+    <div id="loader"></div>     
     <div id="everything">
-        <header>
+        <div class="top">
+        <header class="navbar">
             <div class="logopart" data-aos="fade-right">
-                <a href="/" class="logo" ><img src="/images/logo.webp" alt=""></a>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="/" class="logo" ><img src="./public/images/logo.webp" alt="" class="logoimg"></a>
+                &nbsp;&nbsp;&nbsp;
                 <p class="logoname" >Aperture</p>
             </div>
-        <ul data-aos="fade-left">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Work</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
+            <a href="#" class="toggle">
+                <span class = "bar"></span>
+                <span class = "bar"></span>
+                <span class = "bar"></span>
+            </a>
+       <div class = "navbar-links">
+            <ul data-aos="fade-left">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Work</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
     </header>
-    <section class = "top" >
-        <h1 data-aos="fade-down">Welcome</h1>
+    <section class = "top1" >
+        <p data-aos="fade-down" class="first-quote">"Photography: Forever capturing the heart." <br>
+            - Aaron Siskind.</p>
     </section>
+</div>
 
     <section class = "bottom">
         
         <p class="quote" data-aos="fade-right"><br>“The camera is an instrument that teaches people how to see without a camera.”
            <br> - Dorothea Lange</p>
            <div class="illustration" data-aos="fade-left">
-            <img src="./images/ills.svg" class= "blah" alt="">
+            <img src="./public/images/ills.svg" class= "blah" alt="">
            </div>
         
     </section>
     <section class = "bottom">
         <div class="illustration" data-aos="fade-left">
-            <img src="./images/ills1.svg" class= "blah" alt="">
+            <img src="./public/images/ills1.svg" class= "blah" alt="">
            </div>
-            <p style="font-size: 30px;" class = "quote" data-aos="fade-right">
+            <p  class = "quote" data-aos="fade-right">
                 About Me <br>
                 Hello! I'm Sanjana Bhat, and at the moment, i have
                 no clue on what to say about myself. This website as well as myself
                 are works in progress, so i really don't know.
             </p>
     </section>
-    <section class = "bottom">
+    <section class = "bottom-most">
         
-        <a href="#" class="quote" data-aos="fade-right"><br>Go to Image Gallery</a>
+        
+            <!-- HTML !-->
+            <div class="btn-1">
+                
+                <a href=""><span>Go to Gallery</span></a>
+              </div>
+            
+            
+        
            <div class="illustration" data-aos="fade-left">
-            <img src="./images/ills2.svg" class= "blah" alt="">
+            <img src="./public/images/ills2.svg" class= "blah" alt="">
            </div>
         
     </section>
     <footer>
         <div class="logopart" data-aos="fade-right">
-            <a href="/" class="logo" ><img src="/images/logo.webp" alt=""></a>
+            <a href="/" class="logo" ><img src="./public/images/logo.webp" alt=""></a>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <p class="logoname">Aperture</p>
         </div>

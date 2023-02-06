@@ -14,19 +14,19 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif; 
     /* font-family: 'Sacramento', cursive; */
-    color:white;
+    color: #ffffffa6;
 }
 .top {
     background-size:cover;
     scroll-behavior: smooth;
-    background-image: url("./images/bg.jpg");
+    background-image: url("./public/images/bg1.jpg");
     height: 100vh;
 }
 #loader{
 	position: fixed;
 	width: 100%;
 	height: 100vh;
-	background: #ffffff url('/images/loader.gif') no-repeat center;
+	background: #ffffff url('./public/images/loader.gif') no-repeat center;
 	z-index: 999;
 }
 
@@ -58,9 +58,8 @@ img {
 
 header {
     
-    position: absolute;
-    top: 0;
-    left: 0;
+    background-color: hsla(0, 0%, 2%, 0.911);
+    color:rgba(90, 84, 84, 0.352);
     animation: 0.5s alternate fadein;
     width: 100%;
     padding: 30px 50px;
@@ -72,19 +71,19 @@ header {
 header a {
     text-decoration: none;
 }
-header ul {
+/* header ul {
     display :flex;
     justify-content: center;
     align-items: center;
-}
+} */
 
-header ul li {
+/* header ul li {
     list-style: none;
     margin-left: 20px;
     
-}
+} */
 
-header ul li a {
+/* header ul li a {
     text-decoration: none;
     padding: 6px 13px;
     color: white;
@@ -94,15 +93,16 @@ header ul li a:hover,
 header ul li a.active {
     
     color: #b71d1d;
-}
+} */
 
-h1 {
+.first-quote {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 120px;
-    font-size: 60px;
-    color: white;
+    align-items:start;
+    justify-content: start;
+    padding: 70px;  
+    margin-left: 0px;
+    font-size: 40px;
+    color: #ffffffa6;
     animation: 1s alternate fadein;
 }
 
@@ -110,10 +110,12 @@ h1 {
     
     display:flex;
     justify-content: space-between;
-    background-color: #121d31;
     height: 100vh;
 }
 
+#everything {
+  background: linear-gradient(160deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 46%, rgba(0,0,0,0.8324579831932774) 100%);
+}
 .quote {
     font-size: 50px;
     margin: 40px;
@@ -127,6 +129,202 @@ h1 {
 footer {
     background-color: #0656ea;
 }
+
+
+
+.navbar {
+  height: 100px;
+  background-color: #000000;
+}
+
+
+.navbar-links ul {
+  margin: 0;
+  padding : 0;
+  display:flex;
+
+}
+
+.navbar-links li {
+  list-style: none;
+
+}
+.navbar-links li a {
+  text-decoration: none;
+  color: white;
+  padding : 1rem;
+  display: block;
+}
+.navbar-links li:hover {
+  background-color: rgba(211, 211, 211, 0.304);
+}
+
+.toggle {
+  position: absolute;
+  top: .75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 31px;
+  height: 21px;
+}
+
+.toggle .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+
+
+
+.btn-1 {
+  width: 550px;
+  height: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 120px;
+}
+
+.btn-1 a {
+  text-decoration: none;
+  border: 2px solid #ffffff;
+  padding: 15px;
+  color: #756666;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+  display: inline-block;
+}
+
+span {
+  position: relative;
+  z-index: 3;
+  color: #ffffff;
+}
+
+.btn-1 a::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -2px;
+  width: calc(100% + 6px);
+  /*100% plus double the times left values*/
+  height: calc(100% - 10px);
+  background-color: #0f0f0f;
+  transition: all 0.5s ease-in-out;
+  transform: scaleY(1);
+}
+
+.btn-1 a:hover::before {
+  transform: scaleY(0);
+}
+
+.btn-1 a::after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: -5px;
+  width: calc(100% - 10px);
+  /*100% plus double the times left values*/
+  height: calc(100% + 10px);
+  background-color: #0f0f0f;
+  transition: all 0.5s ease-in-out;
+  transform: scaleX(1);
+}
+/* Created by http://grohit.com/  */
+
+.btn-1 a:hover::after {
+  transform: scaleX(0);
+}
+
+
+
+
+@media screen and (max-width: 800px) {
+  .top{
+    background-image: url("./public/images/bgphone.jpg");
+  }
+   .toggle {
+    display :flex;
+    
+   }
+
+   .navbar-links {
+    display : none;
+    width: 100%;
+   }
+
+   .navbar {
+    flex-direction: column;
+    
+    align-items: flex-start;
+    
+   }
+   .navbar-links ul {
+    width : 100%;
+    flex-direction: column;
+    background-color: #1a1919;
+    z-index: 99;
+   }
+   .navbar-links li {
+    text-align: center;
+   }
+
+   .navbar-links.active {
+    display: flex;
+   }
+
+   .logoimg {
+    padding-left: 5px;
+    width: 70%;
+    height: 70%;
+   }
+   .logopart .logoname {
+    font-size: 30px;
+
+   }
+   .logopart {
+    margin-left: 5px;
+   }
+
+   .first-quote {
+    font-size: 20px;
+    padding-top: 2px;
+    padding-left: 10px;
+   }
+
+   .quote {
+    font-size: 20px;
+    padding-top: 1px;
+   }
+   .bottom {
+    display: block;
+    
+   }
+   .bottom-most {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+   }
+
+   .blah {
+    width:200px;
+    height:200px;
+    
+   }
+   .btn-1 {
+    
+   }
+
+   
+}
+
   
 @keyframes fade-in {
     from {
