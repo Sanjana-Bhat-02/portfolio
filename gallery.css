@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Poppins;
 }
 body {
     background-color: #1f1d1d;
@@ -32,7 +35,11 @@ body {
 }
 
 .container .heading h3 span {
-    font-weight: 500;
+    font-weight: 1
+    
+    
+    
+    ;
 }
 
 .container .box {
@@ -41,17 +48,26 @@ body {
     justify-content: space-between;
     /* align-items: center; */
 }
-.container .box .dream {
+.container .box .columns {
     display: flex;
     flex-direction: column;
     width: 32.5%;
+    flex-wrap: wrap;
 
 }
-.container .box .dream img{
+.container .box .columns img{
     margin-bottom: 18px;
     width: 100%;
     border-radius: 5px;
     border: 2px solid rgba(255, 255, 255, 0.236);
+    transition:1s;
+    
+    
+}
+
+.container .box .columns img:hover{
+    filter: grayscale(100%);
+    transition:scale(1.1);
     
     
 }
@@ -70,29 +86,30 @@ body {
    
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-device-width: 400px) {
 
     .container .box {
         flex-direction: column;
     }
 
-    .container .box .dream {
+    .container .box .columns {
         
         
         width: 100%;
     
     }
+   
 
 }
 
-@media only screen and (max-width: 643px) {
+@media only screen and (max-device-width: 643px) {
     .container .heading {
         width: 100%;
         
     }
 
     .container .heading h3 {
-        font-size: 1em;
+        font-size: 3em;
         
 }
 }
