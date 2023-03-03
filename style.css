@@ -25,7 +25,11 @@ body {
   
   background: #fff;
   min-height: 100vh;
-}   
+}
+
+html{
+  overflow-x: hidden;
+}  
 
 .top {
     background-size:cover;
@@ -160,6 +164,7 @@ header a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  
   /* margin-left: 120px; */
 }
 
@@ -172,16 +177,18 @@ header a {
   letter-spacing: 2px;
   position: relative;
   display: inline-block;
+  
 }
 
-span {
+/* span {
   position: relative;
   z-index: 3;
   color: #ffffff;
-}
+} */
 
 .btn-1 a::before {
   content: "";
+  
   position: absolute;
   top: 5px;
   left: -2px;
@@ -215,26 +222,80 @@ span {
   transform: scaleX(0);
 }
 
+
 .icon-group {
-  display: flex;
-  width:50%;
-  align-items: center;
-  justify-content: center;
-} 
-footer {
-  background-color: #000000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-color: rgba(5, 1, 1, 0.374);
   height: 100px;
-  
-}
-.icons {
-  width: 35px;
-  height: 35px;
-  margin: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
 }
 
+.fa-stack-2x {
+  width: 50px;
+  height: 50px;
+  transform: scale(1, 0.9);
+  /* add the following line to center the icon within the circle */
+  margin: auto;
+}
+
+
+
+
+.fa-stack-1x {
+  color: #fff;
+  font-size: 25px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(5, 1, 1, 0.374); /* set the background color of the Twitter icon to blue */
+  border-radius: 50%; /* set the border-radius to 50% to make the background circular */
+  border: 2.5px solid white;
+  transition: background 0.5s ease; 
+  
+}
+
+.fa-stack-1x:hover {
+  background: linear-gradient(45deg, rgba(157,51,97,1) 0%, rgba(208,72,65,1) 66%, rgba(215,139,32,0.8324579831932774) 100%);
+}
+
+.icon-group .fa-stack:nth-child(2) .fa-stack-1x:hover {
+  background: #0A66C2;
+}
+
+.icon-group .fa-stack:nth-child(3) .fa-stack-1x:hover {
+  background: #49196d;
+}
+
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .link .tooltiptext {
+  visibility: hidden;
+  width: 150px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 2px;
+  
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+  font-size: 15px;
+}
+
+.tooltip:hover .link .tooltiptext {
+  visibility: visible;
+}
 
 
 @media screen and (max-width: 768px) {
