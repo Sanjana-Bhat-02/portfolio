@@ -6,7 +6,7 @@
   <title> My Portfolio </title>
   
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <script defer src="script.js"></script>
+  <!-- <script defer src="script.js"></script> -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="./style.css">
 </head>
@@ -28,9 +28,9 @@
        <div class = "navbar-links">
             <ul data-aos="fade-left">
                 <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Work</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="./gallery.html" target="_blank">Work</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </header>
@@ -49,7 +49,7 @@
            </div>
         
     </section>
-    <section class = "bottom">
+    <section class = "bottom" id="about">
         <div class="illustration" data-aos="fade-left">
             <img src="https://cdn.statically.io/gh/sanju2728/assets/main/illustrations/ills1.svg" class= "blah" alt="">
            </div>
@@ -60,7 +60,7 @@
                 are works in progress, so i really don't know.
             </p>
     </section>
-    <section class = "bottom">
+    <section class = "bottom" >
         
         
             <!-- HTML !-->
@@ -76,7 +76,7 @@
            </div>
         
     </section>
-     <footer>
+     <footer id="contact">
         <!-- <div class="icon-group">
         <a href="https://www.instagram.com/sanjana_bhat02/"><img src="https://cdn.statically.io/gh/sanju2728/assets/main/icons/insta.svg" alt="" class="icons"></a>
         <a href="https://github.com/sanju2728"><img src="https://cdn.statically.io/gh/sanju2728/assets/main/icons/github.svg" alt="" class="icons"></a>
@@ -122,5 +122,6 @@
   <script>
     AOS.init();
   </script>
+  <script src="script.js"></script>
 </body>
 </html>

@@ -30,6 +30,15 @@ toggle.addEventListener('click', () => {
 })
 
 
+// function scroll() {
+//   console.log("called")
+//   var elem = document.getElementById('about');
+//   var y = elem.getBoundingClientRect().top + window.pageYOffset;
+//   window.scrollTo({top: y, behavior: 'smooth'});
+// }
+
+
+
 
 
 
