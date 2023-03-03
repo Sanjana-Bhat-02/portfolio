@@ -84,6 +84,7 @@ header a {
   left: 0;
   right: 0;
   z-index: 9999;
+  
 }
 
 
@@ -111,7 +112,7 @@ header a {
 .toggle {
   position: absolute;
   top: .75rem;
-  right: 1rem;
+  right: 1rem; 
   display: none;
   flex-direction: column;
   justify-content: space-between;
@@ -164,71 +165,39 @@ header a {
 
 
 /* button */
-.btn-1 {
-  width: 550px;
-  height: 450px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  
-  /* margin-left: 120px; */
-}
-
-.btn-1 a {
+.bn47 {
+  position: relative;
+  padding: 1rem 2rem 0.5rem 2.5rem;
+  color: #000000;
+  border: 3px solid #776e62;
+  -webkit-transition: padding 0.3s ease-in-out;
+  transition: padding 0.3s ease-in-out;
   text-decoration: none;
-  border: 2px solid #ffffff;
-  padding: 15px;
-  color: #756666;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  position: relative;
-  display: inline-block;
-  
 }
 
-/* span {
-  position: relative;
-  z-index: 3;
-  color: #ffffff;
-} */
-
-.btn-1 a::before {
-  content: "";
-  
-  position: absolute;
-  top: 5px;
-  left: -2px;
-  width: calc(100% + 6px);
-  /*100% plus double the times left values*/
-  height: calc(100% - 10px);
-  background-color: #0f0f0f;
-  transition: all 0.5s ease-in-out;
-  transform: scaleY(1);
-}
-
-.btn-1 a:hover::before {
-  transform: scaleY(0);
-}
-
-.btn-1 a::after {
+.bn47:before {
   content: "";
   position: absolute;
-  left: 5px;
-  top: -5px;
-  width: calc(100% - 10px);
-  /*100% plus double the times left values*/
-  height: calc(100% + 10px);
-  background-color: #0f0f0f;
-  transition: all 0.5s ease-in-out;
-  transform: scaleX(1);
-}
-/* Created by http://grohit.com/  */
-
-.btn-1 a:hover::after {
-  transform: scaleX(0);
+  top: 0.5rem;
+  left: 0.5rem;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  background-color: #ffffff;
+  border-right: 3px solid #ffffff;
+  border-bottom: 3px solid #ffffff;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
+.bn47:hover {
+  padding: 0.75rem 2.25rem;
+}
+
+.bn47:hover:before {
+  top: 0;
+  left: 0;
+}
 
 .icon-group {
   background-color: rgba(5, 1, 1, 0.374);
@@ -256,23 +225,23 @@ header a {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: rgba(5, 1, 1, 0.374); /* set the background color of the Twitter icon to blue */
+   /* set the background color of the Twitter icon to blue */
   border-radius: 50%; /* set the border-radius to 50% to make the background circular */
-  border: 2.5px solid white;
-  transition: background 0.5s ease; 
+  
+  transition: color 0.5s ease; 
   
 }
 
 .fa-stack-1x:hover {
-  background: linear-gradient(45deg, rgba(157,51,97,1) 0%, rgba(208,72,65,1) 66%, rgba(215,139,32,0.8324579831932774) 100%);
+  color: rgba(157,51,97,1);
 }
 
 .icon-group .fa-stack:nth-child(2) .fa-stack-1x:hover {
-  background: #0A66C2;
+  color: #0A66C2;
 }
 
 .icon-group .fa-stack:nth-child(3) .fa-stack-1x:hover {
-  background: #49196d;
+  color: #66378b;
 }
 
 
@@ -333,10 +302,12 @@ header a {
    }
    .navbar-links li {
     text-align: center;
+    
    }
 
    .navbar-links.active {
     display: flex;
+   
    }
 
    .logoimg {
